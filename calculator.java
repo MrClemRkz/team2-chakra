@@ -9,19 +9,20 @@ class Add
     public static void main(String arg[])
 
     {
-
-        int n;double res=0;
-
+        int n;
+     
         Scanner sc=new Scanner(System.in);
 
-        System.out.println("Enter number you want to calc");
+        System.out.println("------------------------------------------------------------");
+        System.out.println("Enter ctrl + D twice to get the answer (on unix environment)");
+        System.out.println("------------------------------------------------------------");
+        System.out.print("Enter numbers seperated by space, you want to add: ");
 
         int sum = 0;
-        while (sc.hasNext()){
+        do {
             sum += sc.nextInt();
-            System.out.println("Sum = :" + sum);
-        }
-        System.out.println("Sum of numbers= :"+sum);
+        } while (sc.hasNext());
+        System.out.println("\n\nSum of numbers= :"+sum);
 
     }
 
